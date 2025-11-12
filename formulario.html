@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+    <div class="fildeset">
+        <form action="">
+            <fieldset>
+                <div class="name">
+                    <strong>
+                        <h2>Contato conosco</h2>
+                    </strong>
+                    <label for="Nome">Nome</label>
+                    <input placeholder="Nome" id="nome" name="nome" type="text">
+
+                </div>
+                <br>
+                <div class="email">
+                    <label for="email">e-mail</label>
+                    <input placeholder="e-mail" id="email" name="email" type="email">
+                    <br>
+                </div>
+                <br>
+                <div class="assunto">
+                    <label for="assunto">Assunto</label>
+                    <select name="assunto" id="assunto">
+                        <option value="feedback">Retorno sobre o projeto</option>
+                        <option value="sugest">Sujestão para o projeto</option>
+                        <option value="new-project">Novo projeto</option>
+                        <option value="mensagem">Uma mensagem</option>
+                    </select>
+                    <br>
+                </div>
+                <br>
+                <div class="mensagem">
+                    <label for="mensagem">Mensagem</label>
+                    <textarea placeholder="Mensagem" name="mensagem" id="mensagem" cols="82" rows="20"></textarea>
+                    <br>
+                </div>
+
+            </fieldset><br>
+            <button class="botao" type="submit">Enviar</button>
+
+        </form>
+
+    </div>
+    <script>
+        function validaForm() {
+            const email = document.getElementById('email')
+            let emailText = email.value.trim();
+            let valido = false;
+
+            if (emailText.includes("@")) {
+                console.log("Achei @!")
+                valido = true;
+
+            } else {
+                valido = false
+            }
+            let partesEmail = emailText.split("@");
+            if (partesEmail[0].length >= 7 && partesEmail[0].length <= 127) {
+                console.log("o tamanho entre 7 e 127");
+                valido = true;
+            } else {
+                valido = false
+            }
+
+            const nome = document.getElementById("nome");
+            let nomeText = nome.value.trim();
+            if (nome.length >= 3) {
+                console.log("Nome atende ao tamanho minimo")
+                valido = true
+            } else {
+                valido = false
+            }
+
+            const textArea = document.getElementById("mensagem");
+            let textTexto = textArea.value.trim();
+            if (textTexto !== "") {
+                console.log("Texto não pode ser vazio!")
+                valido = true
+            } else {
+                valido = false
+            }
+            
+
+            if (valido) {
+                alert("recebemos sua mensagem ")
+            }
+            else {
+                alert("temos um erro no formulario, corrija para seguir!")
+            }
+
+
+        }
+        document.addEventListener("submit", function (e) {
+            e.preventDefault();
+            validaForm();
+        })
+    </script>
+</body>
+
+</html>
