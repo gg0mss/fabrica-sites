@@ -1,3 +1,5 @@
+#Diagnoatico Projeto
+
 O nome do meu site é "A Repressão na Ditadura Militar: Violência e autoritarismo." Este projeto tem como objetivo
  fornecer informações a respeito da Ditadura Militar.
  As paginas que foram criadas foi:a pagina principal, relatos reais, opnioes, e saiba mais.
