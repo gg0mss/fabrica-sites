@@ -1,39 +1,51 @@
-body{
-background-color: rgb(228, 226, 226);
-    text-align: center;
-    align-items: center;
+body {
+    background-color: rgb(228, 226, 226);
 }
 
-h1{
-    font-family:Verdana, Geneva, Tahoma, sans-serif
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+      text-align: center;
 }
-h2{
-     font-family:Verdana, Geneva, Tahoma, sans-serif
+
+h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
 }
-.navbar{
+
+.navbar {
     display: flex;
     background-color: black;
     gap: 20vw;
     height: 40px;
     align-items: center;
-  
 }
-.navbar a:hover{
+
+.navbar a:hover {
     color: rgb(0, 0, 0);
     background-color: aliceblue;
 }
-a{
+
+a {
     color: aliceblue;
     text-decoration: none;
     display: inline-block;
     padding: 10px 10px;
 }
-p{
+
+p {
     text-align: center;
     width: 600px;
     margin: 0 auto;
+
 }
 
-.botao{
+.botao {
     background-color: aqua;
+}
+
+img {
+    margin: 0 auto;
+    width: 500px;
+    text-align: center;
+    
 }
