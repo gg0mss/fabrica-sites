@@ -5,11 +5,13 @@ body {
 h1 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
       text-align: center;
+       color: brown;
 }
 
 h2 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
+     color: brown;
 }
 
 .navbar {
@@ -49,3 +51,39 @@ img {
     text-align: center;
     
 }
+footer {
+     text-align: center;
+     color: brown;
+}
+form {
+  width: 500px;
+  margin: 40px auto;
+  padding: 40px;
+  font-family: sans-serif;
+  background: #9c9696;
+  border-radius: 14px;
+  box-shadow: 0 3px 10px rgba(66, 172, 117, 0.133);
+}
+
+label { display:block; margin-bottom:5px; }
+
+input, textarea, select {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 12px;
+  border: 1px solid #bbb;
+  border-radius: 12px;
+  font-size: 15px;
+}
+
+button {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 12px;
+  background: #6a5acd;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+button:hover { background:#5848c2; }
