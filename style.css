@@ -42,7 +42,7 @@ p {
 }
 
 .botao {
-    background-color: aqua;
+    background-color: rgb(156, 4, 4);
 }
 
 img {
@@ -86,4 +86,4 @@ button {
   font-size: 16px;
   cursor: pointer;
 }
-button:hover { background:#5848c2; }
+button:hover { background:#060404; }
