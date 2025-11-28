@@ -16,7 +16,7 @@ h2 {
 
 .navbar {
     display: flex;
-    background-color: black;
+    background-color: rgb(144, 0, 0);
     gap: 20vw;
     height: 40px;
     align-items: center;
