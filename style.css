@@ -34,6 +34,12 @@ a {
     padding: 10px 10px;
 }
 
+img {
+    margin: 0 auto;
+    width: 500px;
+    text-align: center;
+    
+}
 p {
     text-align: center;
     width: 600px;
@@ -45,12 +51,7 @@ p {
     background-color: rgb(156, 4, 4);
 }
 
-img {
-    margin: 0 auto;
-    width: 500px;
-    text-align: center;
-    
-}
+
 footer {
      text-align: center;
      color: brown;
